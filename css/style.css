@@ -1,0 +1,111 @@
+/* Seleciona cada um dos elementos do html */
+*{
+    /* Zera os espaçamentos de todos os elementos  */
+    margin: 0;
+    padding: 0;
+    /* Considera a borda ao definir largura e altura */
+    box-sizing: border-box;
+}
+
+body{
+    /* Define a família de fonte paadrão
+     para página */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Define tamanho da fonte */
+    font-size: 16px;
+    /* Define a cord do texto */
+    color: #333 ;
+    /* Define alinhamento do texto */
+    text-align: center;
+}
+
+.container{
+    /* Define uma largura miníma  */
+    min-width: 200px;
+    /* Define uma largura máxima  */
+    max-width: 1900px;
+    /* Define o alinhamento */
+    margin: 0 auto;
+}
+
+header{
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.logo{
+    width: 150px;
+}
+
+.logo img{
+    width: 100%;
+    margin-top: 8%;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    padding-left: 30px;
+}
+
+li{
+    list-style-type: none;
+    margin:10px;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+.banner{
+    /* Define altura */
+    height: 300px;
+    /* Define uma imagem de fundo */
+    background-image: url(../img/banner.jpg);
+    /* Define o tamanho do fundo */
+    background-size: cover;
+    /* Define a posição do fundo */
+    background-position: right;
+}
+
+h1{
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+figure{
+    width: 390px;
+    margin: 10px auto;
+    flex-grow: 1;
+}
+
+figure img{
+    width: 100%;
+}
+
+footer{
+    background-color: #222;
+    padding: 30px 20px;
+}
+
+footer p{
+    color: #999;
+}
